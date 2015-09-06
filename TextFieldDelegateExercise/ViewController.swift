@@ -10,16 +10,30 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var zipField: UITextField!
+    @IBOutlet weak var moneyField: UITextField!
+    @IBOutlet weak var switchField: UITextField!
+    
+    let zipFieldDelegate = zipDelegate()
+    let moneyFieldDelegate = moneyDelegate()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        switchField.enabled = false
+        
+        self.zipField.delegate = zipFieldDelegate
+        self.moneyField.delegate = moneyFieldDelegate
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
+    
+    @IBAction func textFieldEnabler(sender: UISwitch) {
+        let switcher = (sender as UISwitch)
+        switchField.enabled = switcher.on
+    }
+    
 
 }
 

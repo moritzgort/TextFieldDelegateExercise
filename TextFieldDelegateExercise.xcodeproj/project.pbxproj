@@ -13,6 +13,8 @@
 		8EE83DD31B9C2A7A00DB107E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EE83DD21B9C2A7A00DB107E /* Images.xcassets */; };
 		8EE83DD61B9C2A7A00DB107E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EE83DD41B9C2A7A00DB107E /* LaunchScreen.xib */; };
 		8EE83DE21B9C2A7A00DB107E /* TextFieldDelegateExerciseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE83DE11B9C2A7A00DB107E /* TextFieldDelegateExerciseTests.swift */; };
+		8EE83DED1B9C318500DB107E /* zipDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE83DEC1B9C318500DB107E /* zipDelegate.swift */; };
+		8EE83DEF1B9C319000DB107E /* moneyDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE83DEE1B9C319000DB107E /* moneyDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		8EE83DDB1B9C2A7A00DB107E /* TextFieldDelegateExerciseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextFieldDelegateExerciseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EE83DE01B9C2A7A00DB107E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8EE83DE11B9C2A7A00DB107E /* TextFieldDelegateExerciseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldDelegateExerciseTests.swift; sourceTree = "<group>"; };
+		8EE83DEC1B9C318500DB107E /* zipDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = zipDelegate.swift; sourceTree = "<group>"; };
+		8EE83DEE1B9C319000DB107E /* moneyDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = moneyDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,7 @@
 			children = (
 				8EE83DCB1B9C2A7A00DB107E /* AppDelegate.swift */,
 				8EE83DCD1B9C2A7A00DB107E /* ViewController.swift */,
+				8EE83DEB1B9C310900DB107E /* Delegates */,
 				8EE83DCF1B9C2A7A00DB107E /* Main.storyboard */,
 				8EE83DD21B9C2A7A00DB107E /* Images.xcassets */,
 				8EE83DD41B9C2A7A00DB107E /* LaunchScreen.xib */,
@@ -110,6 +115,16 @@
 				8EE83DE01B9C2A7A00DB107E /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8EE83DEB1B9C310900DB107E /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				8EE83DEC1B9C318500DB107E /* zipDelegate.swift */,
+				8EE83DEE1B9C319000DB107E /* moneyDelegate.swift */,
+			);
+			name = Delegates;
+			path = ../TextFieldDelegateExercise.xcodeproj;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,7 +228,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EE83DCE1B9C2A7A00DB107E /* ViewController.swift in Sources */,
+				8EE83DEF1B9C319000DB107E /* moneyDelegate.swift in Sources */,
 				8EE83DCC1B9C2A7A00DB107E /* AppDelegate.swift in Sources */,
+				8EE83DED1B9C318500DB107E /* zipDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +426,7 @@
 				8EE83DE71B9C2A7A00DB107E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8EE83DE81B9C2A7A00DB107E /* Build configuration list for PBXNativeTarget "TextFieldDelegateExerciseTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +435,7 @@
 				8EE83DEA1B9C2A7A00DB107E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
